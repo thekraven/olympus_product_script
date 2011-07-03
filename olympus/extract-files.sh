@@ -16,10 +16,23 @@
 
 DEVICE=olympus
 
+#creates the folders that will contain the extracted files
 sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
+
+#
+#  -----------------this is how you adb extract the files
+#./adb pull /system/lib/libarcsoft.so ../../../vendor/motorola/$DEVICE/proprietary
+#
+
 #adb pull /system/app/PhoneConfig.apk ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/app/ProgramMenu.apk ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/app/ProgramMenuSystem.apk ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#   /system/bin folder                                          #
+#                                                               #
+#                                                               #
+#################################################################
 #adb pull /system/bin/Hostapd ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/bin/SaveBPVer ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/akmd2 ../../../vendor/motorola/$DEVICE/proprietary
@@ -59,6 +72,12 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/bin/ti_config_adc.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/tstmetainfo ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/usbd ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#  /system/etc folder                                           #
+#                                                               #
+#                                                               #
+#################################################################
 #adb pull /system/etc/amazon-kindle.properties ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/etc/arcplayer.cfg ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/etc/backup_targets.csv ../../../vendor/motorola/$DEVICE/proprietary
@@ -92,6 +111,12 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/etc/wifi/tiwlan.ini ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/etc/wifi/tiwlan_ap.ini ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/wifi/wpa_supplicant.conf ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#libs                                                           #
+#                                                               #
+#                                                               #
+#################################################################
 #adb pull /system/lib/dsp/720p_h264vdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/lib/dsp/720p_mp4vdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/lib/dsp/720p_mp4venc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
@@ -226,39 +251,57 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #
 #adb pull /system/lib/ulogd_BASE.so ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/lib/ulogd_SQLITE3.so ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#where are the tts files                                        #
+#                                                               #
+#                                                               #
+#################################################################
 #adb pull /system/tts/lang_pico/en-US_lh0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/tts/lang_pico/en-US_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/tts/lang_pico/es-ES_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/tts/lang_pico/es-ES_zl0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
-#
-#Keyboards
-#
+#################################################################
+#                                                               #
+#keychars                                                       #
+#                                                               #
+#                                                               #
+#################################################################
 ./adb pull /system/usr/keychars/evfwd.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keychars/qwerty.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keychars/qwerty2.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keychars/tegra-kbc.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keychars/usb_keyboard_102_en_us.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
-#
-#Keyboard Layouts
-#
+#################################################################
+#                                                               #
+#keyboard layouts                                               #
+#                                                               #
+#                                                               #
+#################################################################
 ./adb pull /system/usr/keylayout/AVRCP.kl ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keylayout/cpcap-key.kl ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keylayout/evfwd.kl ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keylayout/qwerty.kl ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keylayout/tegra-kbc.kl ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/usr/keylayout/usb_keyboard_102_en_us.kl ../../../vendor/motorola/$DEVICE/proprietary
-#
-#xbins
-#
+#################################################################
+#                                                               #
+#xbins                                                          #
+#                                                               #
+#                                                               #
+#################################################################
 #adb pull /system/xbin/backup ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/drm1_func_test ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/pppd ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/xbin/run_backup ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/xbin/run_restore ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/xbin/ssmgrd ../../../vendor/motorola/$DEVICE/proprietary
-#
-#???
-#
+#################################################################
+#                                                               #
+#more libs                                                      #
+#                                                               #
+#                                                               #
+#################################################################
 ./adb pull /system/lib/libaudio.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libcamera.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libnmea.so ../../../vendor/motorola/$DEVICE/proprietary
