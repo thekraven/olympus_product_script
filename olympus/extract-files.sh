@@ -76,7 +76,6 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/fbread ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/fdisk ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/fsck_msdos ../../../vendor/motorola/$DEVICE/proprietary
-
 ./adb pull /system/bin/ftmipcd ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/gdbserver ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/bin/gkilogd ../../../vendor/motorola/$DEVICE/proprietary
