@@ -1,0 +1,11 @@
+We are currently working on extract_files.sh
+
+this particular file pulls the files and libs necessary to compile from the phone.
+
+the best method is to dd a system image and add in the files to the extrac_files.sh
+
+to create a system.img 
+
+dd if=/dev/block/mmcblk0p12 of=/sdcard/imgs/system.img
+
+good luck!
