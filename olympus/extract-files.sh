@@ -530,13 +530,32 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #                                                               #
 #                                                               #
 #################################################################
-./adb pull /system/xbin/ssmgrd ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/add-property-tag ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/backup ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/btool ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/check-lost+found ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/dexdump ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/dhdarm ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/dosu ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/drm1_func_test ../../../vendor/motorola/$DEVICE/proprietary
-./adb pull /system/xbin/pppd ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/hciconfig ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/hcidump ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/hcitool ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/l2ping ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/latencytop ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/librank ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/opcontrol ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/oprofiled ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/procmem ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/procrank ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/rawbu ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/run_backup ../../../vendor/motorola/$DEVICE/proprietary
 /adb pull /system/xbin/run_restore ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/xbin/ssmgrd ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/scp ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/showmap ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/showslab ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/sqlite3 ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/strace ../../../vendor/motorola/$DEVICE/proprietary
 
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/motorola/$DEVICE/$DEVICE-vendor-blobs.mk
