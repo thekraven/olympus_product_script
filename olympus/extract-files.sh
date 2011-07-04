@@ -214,7 +214,7 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libandroid_servers.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libarcsoft.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libaudio.so ../../../vendor/motorola/$DEVICE/proprietary
-./adb pull /system/lib/libaudioeffect_ini.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libaudioeffect_jni.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libaudioflinger.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libaudiopolicy.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libAuthUDMDrv_1750A100.so ../../../vendor/motorola/$DEVICE/proprietary
@@ -245,6 +245,35 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libdlnahttppjni.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libdlnajni.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libdlnaprofileparse.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdlnasysjni.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdmengine.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdmjavaplugin.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdrm1.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdrm1_jni.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdvm.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libeffects.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libEGL.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libemoji.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libETC1.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libexempi.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libexif.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libexpat.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libext2_blkid.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libext2_com_err.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libext2_e2p.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libdext2fs.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libext2_profile.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libext2_uuid.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libextdisp.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libFFTEm.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libGLESv1_CM.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libGLESv2.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libglwtanijni.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libgui.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libhardware.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libhardware_legacy.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libhdmi.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/libhostapd_client.so ../../../vendor/motorola/$DEVICE/proprietary
 #
 #
 #
