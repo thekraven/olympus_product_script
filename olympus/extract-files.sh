@@ -450,60 +450,46 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libxmpcore.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libXmp_jni.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/libz.so ../../../vendor/motorola/$DEVICE/proprietary
-#
-#
-#
-#
-#
-./adb pull /system/lib/egl/libEG.so ../../../vendor/motorola/$DEVICE/proprietary
-./adb pull /system/lib/egl/libGLESv1_tegra.so ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#  /system/egl folder                                           #
+#                                                               #
+#                                                               #
+#################################################################
+./adb pull /system/lib/egl/libEGL_tegra.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/egl/libGLESv1_CM_tegra.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/egl/libGLESv2_tegra.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/egl/libeglinfo.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/egl/libGLES_android.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/egl/egl.cfg ../../../vendor/motorola/$DEVICE/proprietary
+#################################################################
+#                                                               #
+#  /system/hw  folder                                           #
+#                                                               #
+#                                                               #
+#################################################################
+./adb pull /system/lib/hw/gps.goldfish.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/hw/gps.olympus.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/hw/gralloc.tegra.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/hw/gralloc.default.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/hw/lights.tegra.so ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/lib/hw/overlay.tegra.so ../../../vendor/motorola/$DEVICE/proprietary
-./adb pull /system/lib/hw/sensors.tegra.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/hw/sensors.goldfish.so ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/lib/hw/sensors.olympus.so ../../../vendor/motorola/$DEVICE/proprietary
 #################################################################
 #                                                               #
 #  /system/etc folder                                           #
 #                                                               #
 #                                                               #
 #################################################################
-#adb pull /system/etc/amazon-kindle.properties ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/arcplayer.cfg ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/backup_targets.csv ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/cameraCalFileDef5M.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/cameraCalFileDef8M.bin ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/contextawareness/algorithm.xml ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/excluded-input-devices.xml ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/firmware/ap_bt_data.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/firmware/wl1271.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/fm_rx_init_1273.2.bts ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/fm_rx_init_6450.2.bts ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/fmc_init_1273.2.bts ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/fmc_init_6450.2.bts ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/ppp/peers/pppd-ril.options ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/priority_notifications_config.xml ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/pvextensions.cfg ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/pvplayer_mot.cfg ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/security/mancacerts.zip ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/security/oprcacerts.zip ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/security/otacacerts.zip ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/security/cacerts.bks ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/smc_android_cfg.ini ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/smc_android_cfg_256.ini ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/smc_pa.ift ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/smc_pa_pk_4_ipa.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/supportedlocales.conf ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/vzwpubagps.cer ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/wifi/fw_tiwlan_ap.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/wifi/fw_wlan1271.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/wifi/hostapd.conf.templet ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/wifi/tiwlan.ini ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/etc/wifi/tiwlan_ap.ini ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/etc/wifi/wpa_supplicant.conf ../../../vendor/motorola/$DEVICE/proprietary
 #################################################################
 #                                                               #
@@ -511,10 +497,10 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #                                                               #
 #                                                               #
 #################################################################
-#adb pull /system/tts/lang_pico/en-US_lh0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/tts/lang_pico/en-US_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/tts/lang_pico/es-ES_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/tts/lang_pico/es-ES_zl0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/tts/lang_pico/en-US_lh0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/tts/lang_pico/en-US_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/tts/lang_pico/es-ES_ta.bin ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/tts/lang_pico/es-ES_zl0_sg.bin ../../../vendor/motorola/$DEVICE/proprietary
 #################################################################
 #                                                               #
 #keychars                                                       #
@@ -544,11 +530,12 @@ sudo mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 #                                                               #
 #                                                               #
 #################################################################
-#adb pull /system/xbin/backup ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/ssmgrd ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/backup ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/drm1_func_test ../../../vendor/motorola/$DEVICE/proprietary
 ./adb pull /system/xbin/pppd ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/xbin/run_backup ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/xbin/run_restore ../../../vendor/motorola/$DEVICE/proprietary
+./adb pull /system/xbin/run_backup ../../../vendor/motorola/$DEVICE/proprietary
+/adb pull /system/xbin/run_restore ../../../vendor/motorola/$DEVICE/proprietary
 #adb pull /system/xbin/ssmgrd ../../../vendor/motorola/$DEVICE/proprietary
 
 
