@@ -1,11 +1,5 @@
-We are currently working on extract_files.sh
+extract_files.sh is mostly done but should get the basic files of the phone
 
-this particular file pulls the files and libs necessary to compile from the phone.
-
-the best method is to dd a system image and add in the files to the extrac_files.sh
-
-to create a system.img 
-
-dd if=/dev/block/mmcblk0p12 of=/sdcard/imgs/system.img
+next: see whats missing and generated!
 
 good luck!
