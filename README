@@ -1,2 +1,23 @@
-most thanks to tenfar, tehDrizzle!
+Many thanks go to tenfar, Brandon15811 and to tehDrizzle!
+
+Guide!
+
+Download and prepare to compile CM7 on a x64 system.
+follow this cuide: http://wiki.cyanogenmod.com/wiki/Compile_CyanogenMod_for_Shadow
+but dont compile!
+
+Once everything is ready. Add the folder /olympus to ~/android/system/device/motorola
+
+And add /vendor direct to the root.
+
+Now type | . build/envsetup.sh
+
+Once is finish type | lunch
+
+Select whatever option is | full_olympus
+
+Once is finished type | make -j2
+
+note: if you run to troubles using -j2 simply replace it with -i
+
 good luck!
