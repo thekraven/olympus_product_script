@@ -83,7 +83,7 @@ mkdir -p ./../../vendor/motorola/olympus/overlay/packages/apps/Launcher2/res/lay
 </merge>
 EOF
 
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../vendor/$VENDOR/$DEVICE/$DEVICE-vendor-blobs.mk
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ./../../vendor/motorola/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2011 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
